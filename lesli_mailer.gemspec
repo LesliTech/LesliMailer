@@ -38,25 +38,35 @@ Gem::Specification.new do |spec|
     spec.name        = "lesli_mailer"
     spec.version     = LesliMailer::VERSION
     spec.platform    = Gem::Platform::RUBY
-    spec.license     = "GPL-3.0"
+    spec.license     = "GPL-3.0-or-later"
     spec.authors     = ["The Lesli Development Team"]
     spec.email       = ["hello@lesli.tech"]
     spec.homepage    = "https://www.lesli.dev/"
-    spec.summary     = "Mail tools for The Lesli Framework."
-    spec.description = "Mail tools for The Lesli Framework."
+    spec.summary     = "Email delivery and templating engine for The Lesli Framework."
+    spec.description = <<~DESC
+        LesliMailer provides a flexible and extendable mailing 
+        system designed for applications built on top of The Lesli Framework.
+    DESC
 
     # Prevent pushing this gem to RubyGems.org. To allow pushes either set the "allowed_push_host"
     # to allow pushing to a single host or delete this section to allow pushing to any host.
     # spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
 
-    spec.metadata["homepage_uri"] = spec.homepage
-    spec.metadata["changelog_uri"] = "https://github.com/LesliTech/LesliMailer"
-    spec.metadata["source_code_uri"] = "https://github.com/LesliTech/LesliMailer"
+    spec.metadata["homepage_uri"]       = spec.homepage
+    spec.metadata["changelog_uri"]      = "https://github.com/LesliTech/LesliMailer/releases"
+    spec.metadata["source_code_uri"]    = "https://github.com/LesliTech/LesliMailer"
+    spec.metadata["bug_tracker_uri"]    = "https://github.com/LesliTech/LesliMailer/issues"
+    spec.metadata["documentation_uri"]  = "https://www.lesli.dev/mailer/"
 
     spec.files = Dir.chdir(File.expand_path(__dir__)) do
         Dir["{app,config,db,lib}/**/*", "license", "Rakefile", "readme.md"]
     end
 
+
+    # Ruby version
+    spec.required_ruby_version = ">= 3.2"
+
+    
     # Lesli core minimum requirements
     spec.add_dependency "lesli", "~> 5"
 end

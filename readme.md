@@ -1,23 +1,29 @@
-<div align="center">
-	<img width="90" alt="Lesli logo" src="./app/assets/images/lesli_mailer/mailer-logo.svg" />
-    <h3 align="center">Mails for the Lesli Framework.</h3>
+<div align="center" class="documentation-header">
+    <img width="100" alt="Lesli logo" src="./app/assets/images/lesli_mailer/mailer-logo.svg" />
+    <h3 align="center">Ruby on Rails SaaS Development Framework.</h3>
 </div>
-
-<hr/>
-<div align="center">
-    <a target="blank" href="https://rubygems.org/gems/lesli_mailer">
-        <img src="https://badge.fury.io/rb/lesli_mailer.svg" alt="Gem Version" height="24">
-    </a>
-</div>
-<hr/>
 
 <br />
+<hr/>
 
-<div align="center">
-    <img 
-        style="width:100%;max-width:800px;border-radius:6px;" 
-        alt="Lesli screenshot" src="./docs/images/screenshot.png" />
+<div align="center" class="documentation-statics">
+    <a target="blank" href="https://github.com/LesliTech/LesliMailer/actions">
+        <img alt="Tests passing" src="https://img.shields.io/badge/Tests-passing-green?style=for-the-badge&logo=github">
+    </a>
+    <a target="blank" href="https://rubygems.org/gems/lesli_mailer">
+        <img alt="Gem Version" src="https://img.shields.io/gem/v/lesli_mailer?style=for-the-badge&logo=ruby">
+    </a>
+    <a target="blank" href="https://codecov.io/github/LesliTech/LesliMailer"> 
+        <img alt="Codecov" src="https://img.shields.io/codecov/c/github/LesliTech/LesliMailer?style=for-the-badge&logo=codecov">
+    </a>
+    <a target="blank" href="https://sonarcloud.io/project/overview?id=LesliTech_LesliMailer"> 
+        <img alt="Sonar Quality Gate" src="https://img.shields.io/sonar/quality_gate/LesliTech_LesliMailer?server=https%3A%2F%2Fsonarcloud.io&style=for-the-badge&logo=sonarqubecloud&label=Quality">
+    </a>
 </div>
+
+<hr/>
+<br />
+
 
 ### Quick start
 
@@ -39,9 +45,8 @@ end
 ```
 
 
-### Documentation
+### Lesli Documentation
 * [website](https://www.lesli.dev/)
-* [database](./docs/database.md)
 * [documentation](https://www.lesli.dev/engines/mailer/)
 
 
@@ -54,7 +59,7 @@ end
 
 ### License
 -------
-Copyright (c) 2023, Lesli Technologies, S. A.
+Copyright (c) 2025, Lesli Technologies, S. A.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -72,8 +77,7 @@ along with this program. If not, see http://www.gnu.org/licenses/.
 <hr />
 <br />
 
-<p align="center">
+<div align="center" class="has-text-centered">
     <img width="200" alt="Lesli logo" src="https://cdn.lesli.tech/lesli/brand/app-logo.svg" />
-    <h4 align="center">Ruby on Rails SaaS Development Framework.</h4>
-</p>
-
+    <h4 align="center" class="mt-0">Ruby on Rails SaaS Development Framework.</h4>
+</div>
