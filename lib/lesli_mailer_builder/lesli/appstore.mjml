@@ -1,0 +1,64 @@
+<!--
+Lesli
+
+Copyright (c) 2025, Lesli Technologies, S. A.
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see http://www.gnu.org/licenses/.
+
+Lesli · Ruby on Rails SaaS Development Framework.
+
+Made with ♥ by LesliTech
+Building a better future, one line of code at a time.
+
+@contact  hello@lesli.tech
+@website  https://www.lesli.tech
+@license  GPLv3 http://www.gnu.org/licenses/gpl-3.0.en.html
+
+// · ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~
+// · 
+-->
+
+
+<!--
+    Links to the appstores
+-->
+<mj-section>
+    <mj-column>
+        <mj-text align="center" font-size="18px" font-weight="600" color="#444444">
+            Download our app
+        </mj-text>
+        <mj-table align="center">
+            <tr>
+                <td style="text-align: right; padding: 5px;">
+                    <a target="blank" href="https://apps.apple.com/us/app/lesli/id1595893730">
+                        <img
+                            width="130px"
+                            alt="Appstore badge"
+                            src="https://cdn.lesli.tech/leslicloud/emails/appstore.png"
+                        />
+                    </a>
+                </td>
+                <td style="text-align: left; padding: 5px;">
+                    <a target="blank" href="https://apps.apple.com/us/app/lesli/id1595893730">
+                        <img
+                            width="130px"
+                            alt="Playstore badge"
+                            src="https://cdn.lesli.tech/leslicloud/emails/playstore.png"
+                        />
+                    </a>
+                </td>
+            </tr>
+        </mj-table>
+    </mj-column>
+</mj-section>

@@ -1,0 +1,53 @@
+<!--
+Lesli
+
+Copyright (c) 2025, Lesli Technologies, S. A.
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see http://www.gnu.org/licenses/.
+
+Lesli · Ruby on Rails SaaS Development Framework.
+
+Made with ♥ by LesliTech
+Building a better future, one line of code at a time.
+
+@contact  hello@lesli.tech
+@website  https://www.lesli.tech
+@license  GPLv3 http://www.gnu.org/licenses/gpl-3.0.en.html
+
+// · ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~
+// · 
+-->
+
+
+<!--
+    Head of the email.  
+    Define CSS classes and styles
+-->
+<mj-head>
+    <mj-attributes>
+        <mj-class name="lesli.body" background-color="#ebecf0" />
+        <mj-class name="lesli.content" background-color="#ffffff" border-radius="15px" padding="40px" max-width="60px" box-shadow="rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;"/> 
+
+        <mj-class name="lesli.title" align="center" color="#4a5056" padding="0px" />
+        <mj-class name="lesli.text" font-size="16px" color="#4a5056" line-height="1.2" />
+        <mj-class name="lesli.separator" height="2px" container-background-color="#DBDBDB" />
+
+        <mj-class name="lesli.button-success" color="#23D160" background-color="#EFFAF3" border="1px solid #23D160" border-radius="5px" font-size="16px"/>
+        <mj-class name="lesli.button-info"    color="#209cee" background-color="#eef6fc" border="1px solid #209cee" border-radius="5px" font-size="16px"/>
+
+        <mj-class name="width-600" width="400" />
+        <mj-class name="font-18" font-size="18px" />
+        <mj-class name="font-14" font-size="14px" />
+    </mj-attributes>
+</mj-head>
