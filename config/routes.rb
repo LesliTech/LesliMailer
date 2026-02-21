@@ -1,3 +1,3 @@
 LesliMailer::Engine.routes.draw do
-    Lesli::Router.mount_routes_for(LesliMailer)
+    Lesli::Router.mount_lesli_engine_routes(self)
 end
