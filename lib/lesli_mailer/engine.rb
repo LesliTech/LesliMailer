@@ -34,6 +34,11 @@ module LesliMailer
     class Engine < ::Rails::Engine
         isolate_namespace LesliMailer
 
+        # Register packaged previews through the Rails Engine path API.
+        # Rails controls whether the preview routes are exposed through
+        # config.action_mailer.show_previews.
+        paths["test/mailers/previews"] << "lib/lesli_mailer_previews"
+
         initializer :lesli_mailer do |app|
 
             # register assets manifest
@@ -43,13 +48,6 @@ module LesliMailer
             unless app.root.to_s.match root.to_s
                 config.paths["db/migrate"].expanded.each do |expanded_path|
                     app.config.paths["db/migrate"] << expanded_path
-                end
-            end
-
-            # load mailer previews
-            if Rails.env.development?
-                ActiveSupport.on_load(:action_mailer) do
-                    ActionMailer::Base.preview_paths << LesliMailer::Engine.root.join("lib/lesli_mailer_previews")
                 end
             end
         end

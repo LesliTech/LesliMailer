@@ -2,7 +2,7 @@
 
 Lesli
 
-Copyright (c) 2023, Lesli Technologies, S. A.
+Copyright (c) 2026, Lesli Technologies, S. A.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -32,23 +32,40 @@ Building a better future, one line of code at a time.
 module LesliMailer
     class DeviseMailerPreview < ActionMailer::Preview
 
+        TOKEN = "preview-token"
+
         def reset_password_instructions
-            record = Lesli::User.first
-            token = "abcdef12345"
-            opts = {}
-            Lesli::DeviseMailer.reset_password_instructions(record, token, opts)
+            LesliShield::DeviseMailer.reset_password_instructions(
+                preview_user,
+                TOKEN
+            )
         end
 
         def confirmation_instructions
-            record = Lesli::User.first
-            token = "abcdef12345"
-            opts = {}
-            Lesli::DeviseMailer.confirmation_instructions(record, token, opts)
+            LesliShield::DeviseMailer.confirmation_instructions(
+                preview_user,
+                TOKEN
+            )
         end
 
         def welcome
-            record = Lesli::User.first
-            Lesli::DeviseMailer.welcome(record)
+            LesliShield::DeviseMailer.welcome(preview_user)
+        end
+
+        private
+
+        # Keep previews available on a new database and stable across machines.
+        def preview_user
+            @preview_user ||= Lesli::User.new(
+                email: "hello@lesli.dev",
+                first_name: "Owner"
+            ).tap do |user|
+                user.account = Lesli::Account.new(
+                    name: "Lesli",
+                    email: "hello@lesli.dev",
+                    status: "active"
+                )
+            end
         end
     end
 end
