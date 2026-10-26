@@ -1,0 +1,28 @@
+# LesliMailer
+#
+# Copyright (c) 2026, Lesli Technologies, S. A.
+# Licensed under GPL-3.0-or-later.
+#
+# Test and scan this Rails engine through LesliActions.
+
+name: "Lesli CI"
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  ci:
+    name: "Test Rails engine"
+    uses: LesliTech/LesliActions/.github/workflows/lesli-ci-engine.yaml@master
+    with:
+      ruby-version: "3.3.5"
+      run-security: true
+    secrets:
+      CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}

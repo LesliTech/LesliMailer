@@ -40,12 +40,8 @@ module LesliMailer
         paths["test/mailers/previews"] << "lib/lesli_mailer_previews"
 
         initializer :lesli_mailer do |app|
-
-            # register assets manifest
-            config.assets.precompile += %w[lesli_mailer_manifest.js]
-
             # register engine migrations path
-            unless app.root.to_s.match root.to_s
+            unless app.root.to_s == root.to_s
                 config.paths["db/migrate"].expanded.each do |expanded_path|
                     app.config.paths["db/migrate"] << expanded_path
                 end
